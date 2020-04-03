@@ -172,7 +172,7 @@ var isDefusing = false;
 var bomb_time,
     bomb_timer,
     bomb_timer_css,
-    bombcont;
+    bombcont_css;
 bomb_time = 0;
 function bomb(time) {
     if (Math.pow((time - bomb_time), 2) > 1) {
@@ -198,8 +198,8 @@ function bomb(time) {
 }
 function resetBomb() {
     clearInterval(bomb_timer);
-    $("#bomb_timer").css("display", "block");
-    $("#bombcont").css("display", "none");
+    $("#bomb_timer").css("display", "none");
+    $("#bombcont").css("display", "block");
 }
 
 //SOME other weird vars
@@ -325,14 +325,16 @@ function updatePage(data) {
             .find("#team_money_1").removeClass('low').addClass(left.team_money < 1000 ? "low":"")
             .text("$" + left.team_money);
         $("#left")
-            .find("#eq_money_1")
+            .find("#eq_money_color_1").removeClass("t-color ct-color").addClass(teams.left.side.toLowerCase() + "-color")
+            .find("#eq_money_1").removeClass("t-color ct-color").addClass(teams.left.side.toLowerCase() + "-color")
             .text("$" + left.equip_value);
 
         $("#right")
             .find("#team_money_2").removeClass('low').addClass(right.team_money < 1000 ? "low":"")
             .text("$" + right.team_money);
         $("#right")
-            .find("#eq_money_2")
+            .find("#eq_money_color_2").removeClass("t-color ct-color").addClass(teams.right.side.toLowerCase() + "-color")
+            .find("#eq_money_2").removeClass("t-color ct-color").addClass(teams.right.side.toLowerCase() + "-color")
             .text("$" + right.equip_value);
     }
 

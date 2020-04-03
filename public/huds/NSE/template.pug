@@ -213,14 +213,14 @@ html
               .kills 0
               .assists 0
               .deaths 0
-        .money
+        #eq_money_color_1.money
           img.invert(src='/files/img/elements/team.png', style='max-height: 70%; margin-top:10px; margin-left:10px; float:left;')
           div(style='width:25%; float:left; color: #00b400;  text-shadow: 0 0 8px black;')
             .first_title_tm Team money:
             #team_money_1.first_tm(style='font-weight:600') $0
           img.invert(src='/files/img/elements/eq.png', style='max-height: 70%; margin-top:10px; float:left;')
-          div(style='width:40%; float:left; color: #f7bf16; text-shadow: 0 0 8px black;')
-            .first_title_tm Equipment value:
+          div(style='width:40%; float:left; text-shadow: 0 0 8px black;')
+            #eq_money_text_1.first_title_tm Equipment value:
             #eq_money_1.first_tm(style='font-weight:600') $0
       
       #right.team
@@ -330,12 +330,12 @@ html
               .kills 0
               .assists 0
               .deaths 0
-        .money
+        #eq_money_color_2.money
           img.invert(src='/files/img/elements/team.png', style='max-height: 70%; margin-top:10px; margin-right:10px; float:right; ')
           div(style='width:25%; float:right; color: #00b400;  text-shadow: 0 0 8px black; text-align:right;')
             .first_title_tm(style='width: 300px;') Team money:
             #team_money_2.first_tm(style='font-weight:600') $0
           img.invert(src='/files/img/elements/eq.png', style='max-height: 70%; margin-top:10px; margin-right:10px; float:right;')
-          div(style='width:40%; float:right; color: #f7bf16; text-shadow: 0 0 8px black; text-align:right')
-            .first_title_tm(style='width: 300px;') Equipment value:
+          div(style='width:40%; float:right; text-shadow: 0 0 8px black; text-align:right')
+            #eq_money_text_2.first_title_tm(style='width: 300px;') Equipment value:
             #eq_money_2.first_tm(style='font-weight:600') $0
