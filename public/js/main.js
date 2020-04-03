@@ -179,6 +179,10 @@ $(document).ready(function () {
     };
     let match = null;
 
+if (!disp_avatars) {
+    $("#player-container").addClass("no-avatar");
+    }
+
     function create(data, players_data, teams_data){
             data.teamList = teams_data;
             integ.info = data;
