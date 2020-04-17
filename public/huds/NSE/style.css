@@ -220,7 +220,7 @@
 
 
 	.skull, .bomb{
-		filter: brightness(140%);
+		filter: brightness(139%);
 	}
 	.defuse{
 		filter: brightness(200%);
